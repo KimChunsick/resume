@@ -31,9 +31,7 @@ export const Profile: VFC = () => {
             })}
           </ContactBox>
         </TextBox>
-        <MyCharacter autoPlay muted loop playsInline>
-          <source src='./character.mp4' type='video/mp4' />
-        </MyCharacter>
+        <MyCharacter src='./character.gif' alt='Memoji 캐릭터' />
       </DefaultInfo>
       {selfIntroduce.split('\n').map((text) => {
         const uniqueId = useUniqueId()

@@ -45,7 +45,7 @@ export const ContactBox = styled.div`
   overflow-x: auto;
 `
 
-export const MyCharacter = styled.video`
+export const MyCharacter = styled.img`
   width: 100%;
   max-width: 11rem;
   margin-left: auto;
