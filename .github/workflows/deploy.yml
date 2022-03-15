@@ -1,0 +1,34 @@
+name: deploy blog
+
+on:
+  push:
+    branches: [master]
+  pull_request:
+    branches: [master]
+
+jobs:
+  deploy_blog:
+    name: deploy
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v2
+      - uses: actions/setup-node@v2
+        with:
+          node-version: '14'
+
+      - name: package install
+        run: |
+          yarn
+
+      - name: react build
+        run: |
+          yarn build
+          echo "kimchunsick.me" > build/CNAME
+        env:
+          NODE_ENV: production
+
+      - name: Deploy to gh-pages
+        uses: peaceiris/actions-gh-pages@v3.6.4
+        with:
+          PERSONAL_TOKEN: ${{secrets.DEPLOY_SECRET_KEY}}
+          PUBLISH_DIR: ./build
