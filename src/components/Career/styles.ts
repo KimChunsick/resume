@@ -7,6 +7,10 @@ export const Wrapper = styled.div`
   @media screen and (max-width: 1024px) {
     flex-direction: column;
   }
+
+  @media print {
+    flex-direction: column;
+  }
 `
 
 export const CompanyBox = styled.div`

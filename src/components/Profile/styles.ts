@@ -8,6 +8,12 @@ export const Wrapper = styled.header`
   & > p:not(:last-child) {
     margin-bottom: 1.25rem;
   }
+
+  @media print {
+    img {
+      display: none;
+    }
+  }
 `
 
 export const DefaultInfo = styled.div`

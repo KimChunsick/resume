@@ -160,4 +160,8 @@ const BlobWrapper = styled.div`
     width: 30rem;
     height: 30rem;
   }
+
+  @media print {
+    display: none;
+  }
 `
