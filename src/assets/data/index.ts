@@ -59,7 +59,7 @@ const data: NeedResumeData = {
       title: 'JavaScript',
       level: 'Major',
       descriptions: [
-        'ECMAScript2015 이후의 JavaScript를 활용해 웹 어플리케이션을 익숙합니다.',
+        'ES6 문법을 활용해 웹 어플리케이션을 개발하는 데 익숙합니다.',
         'Vanilla JavaScript를 활용해 DOM 조작하는 데 익숙합니다.',
         'reduce, map, filter 등 다양한 고차함수를 적극적으로 활용합니다.'
       ]
