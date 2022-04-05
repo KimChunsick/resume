@@ -139,6 +139,12 @@ const Container = styled.article`
     padding: 2rem;
     overflow-x: hidden;
   }
+
+  @media print {
+    & > header {
+      padding-top: 0;
+    }
+  }
 `
 
 const BlobWrapper = styled.div`

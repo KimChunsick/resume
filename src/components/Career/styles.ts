@@ -25,6 +25,12 @@ export const CompanyBox = styled.div`
     border-bottom: 1px solid white;
     margin-bottom: 2rem;
   }
+
+  @media print {
+    padding-bottom: 2rem;
+    border-bottom: 1px solid black;
+    margin-bottom: 2rem;
+  }
 `
 
 export const Company = styled.div`

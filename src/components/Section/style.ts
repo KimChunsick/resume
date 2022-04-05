@@ -11,4 +11,8 @@ export const HorizontalRule = styled.hr`
   height: 0;
   border-top: 2px solid white;
   margin-bottom: 1rem;
+
+  @media print {
+    border-color: black;
+  }
 `
