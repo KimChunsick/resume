@@ -1,26 +1,31 @@
 import styled from 'styled-components'
 
 export const Wrapper = styled.section`
-  display: flex;
-  flex-direction: column;
   margin-top: 5rem;
 
-  /* @media print {
-    page-break-inside: avoid;
-    break-before: always;
-    & > header {
-      padding-top: 0;
-    }
-  } */
+  h3 {
+    margin-bottom: 1.5rem;
+  }
+
+  @media print {
+    margin-top: 3rem;
+    break-before: avoid;
+  }
 `
 
 export const HorizontalRule = styled.hr`
   width: 100%;
   height: 0;
   border-top: 2px solid white;
-  margin-bottom: 1rem;
+  margin-bottom: 2.5rem;
 
-  /* @media print {
+  @media print {
     border-color: black;
-  } */
+  }
+`
+
+export const Content = styled.div`
+  & > :not(:last-child) {
+    margin-bottom: 1.5rem;
+  }
 `

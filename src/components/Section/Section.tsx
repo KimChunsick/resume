@@ -1,7 +1,7 @@
 import { Text } from 'components/Text'
 import { FC } from 'react'
 
-import { HorizontalRule, Wrapper } from './style'
+import { HorizontalRule, Wrapper, Content } from './style'
 import { SectionProps } from './type'
 
 export const Section: FC<SectionProps> = (props) => {
@@ -12,7 +12,7 @@ export const Section: FC<SectionProps> = (props) => {
         {title}
       </Text>
       <HorizontalRule />
-      {children}
+      <Content>{children}</Content>
     </Wrapper>
   )
 }

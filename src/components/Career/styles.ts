@@ -8,9 +8,9 @@ export const Wrapper = styled.div`
     flex-direction: column;
   }
 
-  /* @media print {
-    flex-direction: column;
-  } */
+  @media print {
+    display: block;
+  }
 `
 
 export const CompanyBox = styled.div`
@@ -26,11 +26,11 @@ export const CompanyBox = styled.div`
     margin-bottom: 2rem;
   }
 
-  /* @media print {
+  @media print {
     padding-bottom: 2rem;
     border-bottom: 1px solid black;
     margin-bottom: 2rem;
-  } */
+  }
 `
 
 export const Company = styled.div`
@@ -51,13 +51,17 @@ export const PerformanceBox = styled.div`
   display: flex;
   flex-direction: column;
   flex: 7 1 70%;
-  gap: 3.5rem;
+
+  & > :not(:last-child) {
+    margin-bottom: 3.5rem;
+  }
+
+  @media print {
+    display: block;
+  }
 `
 
 export const Performance = styled.div`
-  display: flex;
-  flex-direction: column;
-
   & > span:nth-child(2) {
     margin-top: 0.25rem;
   }
@@ -68,5 +72,9 @@ export const Performance = styled.div`
 
   & ul {
     margin-top: 1rem;
+  }
+
+  @media print {
+    break-after: avoid;
   }
 `

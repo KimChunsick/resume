@@ -5,6 +5,21 @@ export const GlobalStyle = createGlobalStyle`
   /* reset css 적용 */
   ${reset}
 
+  :root {
+    /* 폰트 적용 */
+    font-family: 'Pretendard',-apple-system,BlinkMacSystemFont,'Segoe UI','Roboto','Oxygen','Ubuntu','Cantarell','Fira Sans','Droid Sans','Helvetica Neue',sans-serif;
+    text-rendering: optimizeLegibility;
+    -webkit-font-smoothing: antialiased;
+    font-weight: 200;
+    letter-spacing: -0.3px;
+  }
+
+  * {
+    padding: 0;
+    border: 0;
+    margin: 0;
+  }
+
   body {
     font-size: 16px;
     color: white;
@@ -14,23 +29,9 @@ export const GlobalStyle = createGlobalStyle`
       font-size: 14px;
     }
 
-    /* @media print {
+    @media print {
       color: black;
-    } */
-  }
-
-  :root {
-    /* 폰트 적용 */
-    font-family: 'Pretendard',-apple-system,BlinkMacSystemFont,'Segoe UI','Roboto','Oxygen','Ubuntu','Cantarell','Fira Sans','Droid Sans','Helvetica Neue',sans-serif;
-    text-rendering: optimizeLegibility;
-    -webkit-font-smoothing: antialiased;
-    font-weight: 200;
-    letter-spacing: -0.3px
-  }
-
-  * {
-    padding: 0;
-    border: 0;
-    margin: 0;
+      background-color: white;
+    }
   }
 `
