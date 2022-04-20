@@ -4,6 +4,14 @@ export const Wrapper = styled.section`
   display: flex;
   flex-direction: column;
   margin-top: 5rem;
+
+  /* @media print {
+    page-break-inside: avoid;
+    break-before: always;
+    & > header {
+      padding-top: 0;
+    }
+  } */
 `
 
 export const HorizontalRule = styled.hr`
@@ -12,7 +20,7 @@ export const HorizontalRule = styled.hr`
   border-top: 2px solid white;
   margin-bottom: 1rem;
 
-  @media print {
+  /* @media print {
     border-color: black;
-  }
+  } */
 `

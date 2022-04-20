@@ -8,9 +8,9 @@ export const Wrapper = styled.div`
     flex-direction: column;
   }
 
-  @media print {
+  /* @media print {
     flex-direction: column;
-  }
+  } */
 `
 
 export const CompanyBox = styled.div`
@@ -26,11 +26,11 @@ export const CompanyBox = styled.div`
     margin-bottom: 2rem;
   }
 
-  @media print {
+  /* @media print {
     padding-bottom: 2rem;
     border-bottom: 1px solid black;
     margin-bottom: 2rem;
-  }
+  } */
 `
 
 export const Company = styled.div`

@@ -140,11 +140,16 @@ const Container = styled.article`
     overflow-x: hidden;
   }
 
-  @media print {
+  /* @media print {
+    break-before: always;
+    * > {
+      page-break-inside: avoid;
+      break-before: always;
+    }
     & > header {
       padding-top: 0;
     }
-  }
+  } */
 `
 
 const BlobWrapper = styled.div`
@@ -167,7 +172,7 @@ const BlobWrapper = styled.div`
     height: 30rem;
   }
 
-  @media print {
+  /* @media print {
     display: none;
-  }
+  } */
 `

@@ -14,9 +14,9 @@ export const GlobalStyle = createGlobalStyle`
       font-size: 14px;
     }
 
-    @media print {
+    /* @media print {
       color: black;
-    }
+    } */
   }
 
   :root {

@@ -9,11 +9,11 @@ export const Wrapper = styled.header`
     margin-bottom: 1.25rem;
   }
 
-  @media print {
+  /* @media print {
     img {
       display: none;
     }
-  }
+  } */
 `
 
 export const DefaultInfo = styled.div`
