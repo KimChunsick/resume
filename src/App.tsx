@@ -124,10 +124,6 @@ const Container = styled.article`
     padding-top: 4.5rem;
   }
 
-  & > section {
-    gap: 1.5rem;
-  }
-
   & > footer {
     margin-top: 5rem;
   }
@@ -140,16 +136,15 @@ const Container = styled.article`
     overflow-x: hidden;
   }
 
-  /* @media print {
-    break-before: always;
-    * > {
-      page-break-inside: avoid;
-      break-before: always;
-    }
+  @media print {
+    display: block;
     & > header {
       padding-top: 0;
     }
-  } */
+    & > footer {
+      display: none;
+    }
+  }
 `
 
 const BlobWrapper = styled.div`
@@ -172,7 +167,7 @@ const BlobWrapper = styled.div`
     height: 30rem;
   }
 
-  /* @media print {
+  @media print {
     display: none;
-  } */
+  }
 `
