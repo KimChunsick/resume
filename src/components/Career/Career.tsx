@@ -46,10 +46,10 @@ export const Career: VFC = () => {
                 const experienceUniqueId = useUniqueId()
                 return (
                   <Performance key={experienceUniqueId}>
-                    <Text as='span' weight='bold' size='subtitle2'>
+                    <Text as='p' weight='bold' size='subtitle2'>
                       {title}
                     </Text>
-                    <Text as='span' size='subtitle3'>
+                    <Text as='p' size='subtitle3'>
                       {experienceDate}
                     </Text>
                     <Text as='p' size='body1'>

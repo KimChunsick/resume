@@ -20,6 +20,10 @@ export const DefaultInfo = styled.div`
   display: flex;
   width: 100%;
   margin-bottom: 3rem;
+
+  @media print {
+    margin-bottom: 0;
+  }
 `
 
 export const TextBox = styled.div`
@@ -45,10 +49,17 @@ export const HorizontalRule = styled.hr`
 
 export const ContactBox = styled.div`
   display: inline-flex;
-  gap: 1rem;
   width: 100%;
   margin-top: 1rem;
   overflow-x: auto;
+
+  & > :not(:last-child) {
+    margin-right: 1rem;
+  }
+
+  @media print {
+    display: none;
+  }
 `
 
 export const MyCharacter = styled.img`

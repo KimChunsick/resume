@@ -124,10 +124,6 @@ const Container = styled.article`
     padding-top: 4.5rem;
   }
 
-  & > section {
-    gap: 1.5rem;
-  }
-
   & > footer {
     margin-top: 5rem;
   }
@@ -141,8 +137,12 @@ const Container = styled.article`
   }
 
   @media print {
+    display: block;
     & > header {
       padding-top: 0;
+    }
+    & > footer {
+      display: none;
     }
   }
 `

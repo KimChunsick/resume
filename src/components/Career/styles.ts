@@ -9,7 +9,7 @@ export const Wrapper = styled.div`
   }
 
   @media print {
-    flex-direction: column;
+    display: block;
   }
 `
 
@@ -51,13 +51,17 @@ export const PerformanceBox = styled.div`
   display: flex;
   flex-direction: column;
   flex: 7 1 70%;
-  gap: 3.5rem;
+
+  & > :not(:last-child) {
+    margin-bottom: 3.5rem;
+  }
+
+  @media print {
+    display: block;
+  }
 `
 
 export const Performance = styled.div`
-  display: flex;
-  flex-direction: column;
-
   & > span:nth-child(2) {
     margin-top: 0.25rem;
   }
@@ -68,5 +72,9 @@ export const Performance = styled.div`
 
   & ul {
     margin-top: 1rem;
+  }
+
+  @media print {
+    break-after: avoid;
   }
 `
