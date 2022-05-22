@@ -314,6 +314,15 @@ const data: NeedResumeData = {
   ],
   awardAndProject: [
     {
+      title: 'Hustler 블로그 모임',
+      date: '2022.01 ~',
+      descriptions: [
+        '지인 기반으로 블로그 모임을 운영하고 있습니다.',
+        '3개월 단위로 활동하며, 2주에 한번씩 글을 제출하는 것을 목표로 하는 모임입니다.',
+        '블로그 글 작성에 대한 게으름을 이기기 위해 만들게 되었습니다.'
+      ]
+    },
+    {
       title: '건축정보 모바일 서비스 콘텐츠 개발 공모전 최우수상',
       date: '2019.11 ~ 2020.02',
       descriptions: [
