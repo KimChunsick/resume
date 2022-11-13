@@ -5,7 +5,7 @@ import { Text } from 'components/Text'
 import { useUniqueId } from 'hooks/useUniqueId'
 import { VFC } from 'react'
 
-import { PerformanceBox, Performance, CompanyBox, Company, Wrapper } from './styles'
+import { PerformanceBox, Performance, CompanyBox, Company, Wrapper, CareerBox } from './styles'
 
 export const Career: VFC = () => {
   const workExperience = data.workExperience
@@ -14,7 +14,7 @@ export const Career: VFC = () => {
       {workExperience?.map(({ company, date, position, team, description, experiences }) => {
         const uniqueId = useUniqueId()
         return (
-          <>
+          <CareerBox>
             <CompanyBox key={`company-${uniqueId}`}>
               <Company>
                 <Text as='h3' size='subtitle2' weight='bold'>
@@ -76,7 +76,7 @@ export const Career: VFC = () => {
                 )
               })}
             </PerformanceBox>
-          </>
+          </CareerBox>
         )
       })}
     </Wrapper>

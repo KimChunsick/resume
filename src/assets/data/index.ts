@@ -412,8 +412,24 @@ const data: NeedResumeData = {
   ],
   workExperience: [
     {
+      company: 'toss',
+      date: '2022.08 ~ 현재 재직중',
+      position: 'Internal Frontend Developer',
+      team: 'TUBA Service Team',
+      description: '',
+      experiences: [
+        {
+          title: 'TUBA(Toss User Behaviour Analyser) 개발 및 유지보수',
+          date: '2022.08 ~',
+          description:
+            'TUBA(튜바)는 토스의 성장을 견인하는 실험/분석 플랫폼입니다.\nA/B 테스트, 유저 관리, 퍼널 분석, 플로우 분석 등의 다양한 기능이 존재합니다.\n\n데이터 제품인 만큼 데이터의 양, 화면의 복잡도, 어려운 개념등이 있지만 이를 사용자에게 쉽게 제공하고, 복잡한 구현도 간단한 코드로 풀어내기 위해 노력하고 있습니다.',
+          summary: ['트리거 기능 레거시 전환', '퍼널 분석 유지보수', '커스텀 이벤트 에디터 개발 및 유지보수']
+        }
+      ]
+    },
+    {
       company: 'HIGHERX',
-      date: '2019.01 ~ 현재 재직중',
+      date: '2019.01 ~ 2022.07',
       position: 'Software Engineer',
       team: 'Platform DEV',
       description:
