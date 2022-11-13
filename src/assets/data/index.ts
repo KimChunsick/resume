@@ -437,7 +437,7 @@ const data: NeedResumeData = {
       experiences: [
         {
           title: '워키도키 앱 프론트 - React',
-          date: '2022.02 ~',
+          date: '2022.02 ~ 2022.07',
           description:
             '새롭게 구축하고 있는 워키도키 앱 프론트입니다.\n현재 워키도키의 프론트엔드 기술 스택은 Vue이나, 2년간 채용을 하며 React가 프론트엔드 시장 중심임을 깨달았습니다.\n따라서 인력을 React 개발자로 채용하면서 Vue에서 React로의 기술 스택 전환을 결정하게 되었습니다.\n\nNext js를 이용해 SSR을 지원하고 있습니다.\nSSR을 지원하게 된 계기는 앱을 유지보수함에 따라 점점 새로운 기능들이 추가되었고, 이에 따라 초기 로딩 속도 2초가 넘어가게 되었습니다.\n이 내용은 VOC에도 올라오게 되었고, SSR을 적용한 뒤 현재는 초기 로딩시 0.7초 아래로 완료되고있습니다.',
           summary: ['Vue -> React 점진적 적용 방안 구성', 'SSR 적용 및 무중단 배포 인프라 구성']
@@ -454,7 +454,7 @@ const data: NeedResumeData = {
         },
         {
           title: '브라우니 메세지 서버 개발 및 유지보수',
-          date: '2021.05 ~',
+          date: '2021.05 ~ 2022.07',
           description:
             '브라우니 서비스에 사용되는 카카오 알림톡, Slack 메세지 전송 등을 다른 개발 팀원이 사용하기 쉽게 API 서버로 분리하였습니다.\n기술 스택: koajs, TypeScript',
           summary: [
@@ -464,7 +464,7 @@ const data: NeedResumeData = {
         },
         {
           title: '브라우니 결제 서버 개발 및 유지보수',
-          date: '2021.05 ~',
+          date: '2021.05 ~ 2022.07',
           description:
             '브라우니 서비스에 사용되는 결제 서버 구현 및 유지보수를 담당하고 있습니다.\n기술 스택: koajs, TypeScript',
           summary: [
@@ -476,7 +476,7 @@ const data: NeedResumeData = {
         },
         {
           title: 'AWS 인프라 구성 및 유지보수',
-          date: '2021.04 ~',
+          date: '2021.04 ~ 2022.07',
           description: '워키도키 및 브라우니 인프라 구성 및 유지보수를 담당하고 있습니다.',
           summary: [
             '사전에 구축한 git flow에 맞춰 develop, stage, production 환경을 구축하여 프로세스에 따라 사용 환경 분리',
@@ -490,7 +490,7 @@ const data: NeedResumeData = {
         },
         {
           title: 'Platform DEV 파트장',
-          date: '2021.04 ~',
+          date: '2021.04 ~ 2022.07',
           description:
             '이전 팀장님이 퇴사하시면서 파트장으로 승진하게 되었습니다. 부족한 점이 많지만 개선하기 위해 항상 노력중입니다.\n하이어엑스 개발 관련 모든 일정 관리, 개발 인원 배치, 관련 중요 커뮤니케이션 담당 등 팀 매니징 업무를 진행하고 있습니다.\n또한 팀 문화 및 업무 프로세스 구축, 개발 팀 표준 등을 구축 및 관리하고 있습니다.',
           summary: [
@@ -516,7 +516,7 @@ const data: NeedResumeData = {
         },
         {
           title: '워키도키 앱 프론트 - Vue',
-          date: '2019.01 ~',
+          date: '2019.01 ~ 2022.06',
           description:
             '현재 교체 작업 중인 워키도키 앱 프론트엔드입니다.\n대다수의 기능(약 95%)을 리드하며 작업했습니다.\n기술 스택: Vue, JavaScript',
           summary: [
@@ -530,7 +530,7 @@ const data: NeedResumeData = {
         },
         {
           title: '워키도키 iOS, Android Native Application 유지보수',
-          date: '2019.01 ~',
+          date: '2019.01 ~ 2022.07',
           description:
             '워키도키는 웹뷰에서 프론트엔드를 보여주고, 웹상에서 하기 힘든 작업들을 JS Bridge로 연결 하여 사용자에게 제공하고 있습니다.\nJS Bridge 및 푸쉬 알림 등, 네이티브에서 활용되는 기능들을 Swift5, Kotlin을 활용하여 개발 및 유지보수를 진행하고 있습니다.\n\n기술 스택: Swift5, Kotlin, Xcode, Android Studio',
           summary: [
