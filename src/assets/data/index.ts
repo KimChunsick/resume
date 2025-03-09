@@ -254,7 +254,7 @@ const data: NeedResumeData = {
   },
   workExperience: [
     {
-      company: 'toss',
+      company: 'Viva Republica',
       date: '2022.08 ~ 현재 재직중',
       position: 'Frontend Developer',
       team: 'TUBA Service Team',
