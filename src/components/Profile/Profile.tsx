@@ -3,7 +3,7 @@ import { Text } from 'components/Text'
 import { useUniqueId } from 'hooks/useUniqueId'
 import { VFC } from 'react'
 
-import { MyCharacter, ContactBox, HorizontalRule, TextBox, Wrapper, ContactMethod, DefaultInfo } from './styles'
+import { ContactBox, HorizontalRule, TextBox, Wrapper, ContactMethod, DefaultInfo } from './styles'
 
 export const Profile: VFC = () => {
   const { name, position, contactMethods, selfIntroduce } = data.introduce
@@ -31,7 +31,6 @@ export const Profile: VFC = () => {
             })}
           </ContactBox>
         </TextBox>
-        <MyCharacter src='./character.gif' alt='Memoji 캐릭터' />
       </DefaultInfo>
       {selfIntroduce.split('\n').map((text) => {
         const uniqueId = useUniqueId()

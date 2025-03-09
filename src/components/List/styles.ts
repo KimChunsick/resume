@@ -32,7 +32,7 @@ export const UL = styled.ul`
     margin-bottom: 1rem;
 
     ::marker {
-      color: ${color.blue1};
+      color: white;
     }
   }
 `

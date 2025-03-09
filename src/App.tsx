@@ -1,7 +1,6 @@
 import data from 'assets/data'
 import { color } from 'assets/styles'
 import { Badge } from 'components/Badge'
-import { Blob } from 'components/Blob'
 import { Career } from 'components/Career'
 import { Link } from 'components/Link'
 import { List } from 'components/List'
@@ -10,7 +9,7 @@ import { Section } from 'components/Section'
 import { Text } from 'components/Text'
 import { useUniqueId } from 'hooks/useUniqueId'
 import { VFC } from 'react'
-import styled, { keyframes } from 'styled-components'
+import styled from 'styled-components'
 
 const badgeLevelMapper: Record<'Major' | 'Minor', 'primary' | 'secondary'> = {
   Major: 'primary',
@@ -21,9 +20,6 @@ export const App: VFC = () => {
   const { skill, workExperience, awardAndProject, hobby } = data
   return (
     <>
-      <BlobWrapper>
-        <Blob />
-      </BlobWrapper>
       <Container>
         <Profile />
         {skill && (
@@ -98,15 +94,6 @@ export const App: VFC = () => {
   )
 }
 
-const rotate = keyframes`
-from {
-  transform: rotate(0deg);
-}
-to {
-  transform: rotate(359deg);
-}
-`
-
 const Container = styled.article`
   position: relative;
   display: flex;
@@ -144,30 +131,5 @@ const Container = styled.article`
     & > footer {
       display: none;
     }
-  }
-`
-
-const BlobWrapper = styled.div`
-  position: fixed;
-  transform: translate(-50%, -50%);
-  left: 50%;
-  top: 50%;
-  width: 50rem;
-  height: 50rem;
-  pointer-events: none;
-  overflow: hidden;
-
-  svg {
-    position: relative;
-    animation: ${rotate} 60s linear infinite;
-  }
-
-  @media screen and (max-width: 1024px) {
-    width: 30rem;
-    height: 30rem;
-  }
-
-  @media print {
-    display: none;
   }
 `
