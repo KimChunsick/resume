@@ -1,4 +1,3 @@
-import { color } from 'assets/styles'
 import styled from 'styled-components'
 
 export const Wrapper = styled.div`
